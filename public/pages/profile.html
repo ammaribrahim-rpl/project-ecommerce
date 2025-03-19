@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <body class="bg-white text-gray-200 ">
+            <!-- header -->
+            <header class="py-4 shadow-sm bg-gray-800 flex items-center">
+                <div class="container max-w-screen flex flex-wrap items-center justify-between mx-auto pr-4 pl-4 pt-4">
+                    <a href="/public/index.html">
+                        <img src="/img/logo.png" alt="Logo" class="ml-12 w-38">
+                    </a>
+        
+                    <div class="w-full max-w-xl relative flex">
+                        <span class="absolute left-4 top-3 text-lg text-gray-400">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input type="text" name="search" id="search"
+                            class="w-full border border-gray-600 border-r-0 pl-12 py-3 pr-3 rounded-l-md bg-gray-700 text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            placeholder="search">
+                        <button
+                            class="bg-blue-600 border border-blue-600 text-white px-8 rounded-r-md hover:bg-blue-500 transition">Search</button>
+                    </div>
+        
+                    <div class="flex items-center space-x-4">
+                        <a href="#" class="text-center text-gray-400 hover:text-blue-500 transition relative">
+                            <div class="text-2xl">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="text-xs leading-3">Wishlist</div>
+                            <div
+                                class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-blue-600 text-white text-xs">
+                                8</div>
+                        </a>
+                        <a href="#" class="text-center text-gray-400 hover:text-blue-500 transition relative">
+                            <div class="text-2xl">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </div>
+                            <div class="text-xs leading-3">Cart</div>
+                            <div
+                                class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-blue-600 text-white text-xs">
+                                2</div>
+                        </a>
+                        <a href="/public/pages/profile.html" class="text-center text-gray-400 hover:text-blue-500 transition relative">
+                            <div class="text-2xl">
+                                <i class="fa-regular fa-user"></i>
+                            </div>
+                            <div class="text-xs leading-3">Account</div>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <!-- ./header -->
+            <!-- navbar -->
+            <nav class="bg-gray-800 max-w-screen flex flex-wrap items-center justify-between mx-auto pr-4 pl-4 pt-2 pb-2">
+                <div class="container flex">
+                    <div class="flex items-center justify-between flex-grow md:pl-12 py-5">
+                        <div class="flex items-center space-x-6 capitalize">
+                            <a href="/public/index.html" class="text-white hover:text-blue-600 transition">Home</a>
+                            <a href="/public/pages/shop.html" class="text-white hover:text-blue-600 transition">Shop</a>
+                            <a href="#" class="text-white hover:text-blue-600 transition">About us</a>
+                            <a href="#" class="text-white hover:text-blue-600 transition">Contact us</a>
+                        </div>
+                        <a href="login.html" class="text-white hover:text-blue-600 transition">Login/Register</a>
+                    </div>
+                </div>
+            </nav>
+            <!-- ./navbar -->
+             <!-- account wrapper -->
+    <div class="container grid grid-cols-12 items-start gap-6 pt-4 pb-16">
+
+        <!-- sidebar -->
+        <div class="col-span-3 max-w-screen p-4 pl-12">
+            <div class="px-4 py-3 shadow flex items-center gap-4">
+                <div class="flex-shrink-0">
+                    <img src="/img/avatar.png" alt="profile"
+                        class="rounded-full w-14 h-14 border border-gray-200 p-1 object-cover">
+                </div>
+                <div class="flex-grow">
+                    <p class="text-gray-800">Hello,</p>
+                    <h4 class="text-black font-medium">John Doe</h4>
+                </div>
+            </div>
+
+            <div class="mt-6 bg-white shadow rounded divide-y divide-gray-200 space-y-4 text-gray-600 max-w-screen p-4">
+                <div class="space-y-1 pl-8 pb-6">
+                    <a href="#" class="relative text-blue-600 block font-medium capitalize transition">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="fa-regular fa-address-card"></i>
+                        </span>
+                        Manage account
+                    </a>
+                    <a href="#" class="relative hover:text-blue-600 block capitalize transition">
+                        Profile information
+                    </a>
+                    <a href="#" class="relative hover:text-blue-600 block capitalize transition">
+                        Manage addresses
+                    </a>
+                    <a href="#" class="relative hover:text-blue-600 block capitalize transition">
+                        Change password
+                    </a>
+                </div>
+
+                <div class="space-y-1 pl-8 pt-4 pb-6">
+                    <a href="#" class="relative hover:text-blue-600 block font-medium capitalize transition">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="fa-solid fa-box-archive"></i>
+                        </span>
+                        My order history
+                    </a>
+                    <a href="#" class="relative hover:text-blue-600 block capitalize transition">
+                        My returns
+                    </a>
+                    <a href="#" class="relative hover:text-blue-600 block capitalize transition">
+                        My Cancellations
+                    </a>
+                    <a href="#" class="relative hover:text-blue-600 block capitalize transition">
+                        My reviews
+                    </a>
+                </div>
+
+                <div class="space-y-1 pl-8 pt-4 pb-6">
+                    <a href="#" class="relative hover:text-blue-600 block font-medium capitalize transition">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="fa-regular fa-credit-card"></i>
+                        </span>
+                        Payment methods
+                    </a>
+                    <a href="#" class="relative hover:text-blue-600 block capitalize transition">
+                        voucher
+                    </a>
+                </div>
+
+                <div class="space-y-1 pl-8 pt-4 pb-6">
+                    <a href="#" class="relative hover:text-blue-600 block font-medium capitalize transition">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        My wishlist
+                    </a>
+                </div>
+
+                <div class="space-y-1 pl-8 pt-4 pb-6">
+                    <a href="#" class="relative hover:text-blue-600 block font-medium capitalize transition">
+                        <span class="absolute -left-8 top-0 text-base">
+                            <i class="fa-regular fa-arrow-right-from-bracket"></i>
+                        </span>
+                        Logout
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- ./sidebar -->
+
+        <!-- info -->
+        <div class="col-span-9 grid grid-cols-3 gap-4 max-w-screen p-4">
+
+            <div class="shadow rounded bg-white px-4 pt-6 pb-8">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="font-medium text-gray-800 text-lg">Personal Profile</h3>
+                    <a href="#" class="text-blue-600">Edit</a>
+                </div>
+                <div class="space-y-1">
+                    <h4 class="text-gray-700 font-medium">John Doe</h4>
+                    <p class="text-gray-800">example@mail.com</p>
+                    <p class="text-gray-800">0811 8877 988</p>
+                </div>
+            </div>
+
+            <div class="shadow rounded bg-white px-4 pt-6 pb-8">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="font-medium text-gray-800 text-lg">Shipping address</h3>
+                    <a href="#" class="text-blue-600">Edit</a>
+                </div>
+                <div class="space-y-1">
+                    <h4 class="text-gray-700 font-medium">John Doe</h4>
+                    <p class="text-gray-800">Medan, North Sumatera</p>
+                    <p class="text-gray-800">20371</p>
+                    <p class="text-gray-800">0811 8877 988</p>
+                </div>
+            </div>
+
+            <div class="shadow rounded bg-white px-4 pt-6 pb-8">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="font-medium text-gray-800 text-lg">Billing address</h3>
+                    <a href="#" class="text-blue-600">Edit</a>
+                </div>
+                <div class="space-y-1">
+                    <h4 class="text-gray-700 font-medium">John Doe</h4>
+                    <p class="text-gray-800">Medan, North Sumatera</p>
+                    <p class="text-gray-800">20317</p>
+                    <p class="text-gray-800">0811 8877 988</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- ./info -->
+    </div>
+    <!-- ./account wrapper -->
+    <!-- footer -->
+      <footer class="text-gray-600 body-font bg-gray-800">
+                <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+                  <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+                    <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                        <img src="/img/logo.png" class="w-32" alt="">
+                      </svg>
+                    </a>
+                    <p class="mt-2 text-sm text-white">.</p>
+                  </div>
+                  <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                      <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">SOLUTION</h2>
+                      <nav class="list-none mb-10">
+                        <li>
+                          <a class="text-gray-400 hover:text-gray-600">Marketing</a>
+                        </li>
+                        <li>
+                          <a class="text-gray-400 hover:text-gray-600">Analitycs</a>
+                        </li>
+                        <li>
+                          <a class="text-gray-400 hover:text-gray-600">Commerce</a>
+                        </li>
+                        <li>
+                          <a class="text-gray-400 hover:text-gray-600">Insights</a>
+                        </li>
+                      </nav>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                      <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">SUPPORT</h2>
+                      <nav class="list-none mb-10">
+                        <li>
+                          <a class="text-gray-400 hover:text-gray-600">Pricing</a>
+                        </li>
+                        <li>
+                          <a class="text-gray-400 hover:text-gray-600">Documentation</a>
+                        </li>
+                        <li>
+                          <a class="text-gray-400 hover:text-gray-600">Guides</a>
+                        </li>
+                        <li>
+                          <a class="text-gray-400 hover:text-gray-600">API Startus</a>
+                        </li>
+                      </nav>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                      <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">SOLUTION</h2>
+                      <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-400 hover:text-gray-600">Marketing</a>
+                          </li>
+                          <li>
+                            <a class="text-gray-400 hover:text-gray-600">Analitycs</a>
+                          </li>
+                          <li>
+                            <a class="text-gray-400 hover:text-gray-600">Commerce</a>
+                          </li>
+                          <li>
+                            <a class="text-gray-400 hover:text-gray-600">Insights</a>
+                          </li>
+                      </nav>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                      <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">SUPPORT</h2>
+                      <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-400 hover:text-gray-600">Pricing</a>
+                          </li>
+                          <li>
+                            <a class="text-gray-400 hover:text-gray-600">Documentation</a>
+                          </li>
+                          <li>
+                            <a class="text-gray-400 hover:text-gray-600">Guides</a>
+                          </li>
+                          <li>
+                            <a class="text-gray-400 hover:text-gray-600">API Startus</a>
+                          </li>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-gray-100">
+                  <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                    <p class="text-gray-500 text-sm text-center sm:text-left">© 2025 Ammar Ibrahim —
+                      <a href="https://www.instagram.com/ammar_rpl/" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@ammar_rpl</a>
+                    </p>
+                    <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                      <a href="https://www.facebook.com/profile.php?id=100046733500312" class="text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                      </a>
+                      <a href="https://www.instagram.com/ammar_rpl/" class="ml-3 text-gray-500">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                      </a>
+                      <a href="https://www.linkedin.com/in/ammar-ibrahim-06ba85253/" class="ml-3 text-gray-500">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+      </footer>
+    <!-- ./footer -->
+    </body>
+    </html>
+</body>
+</html>
